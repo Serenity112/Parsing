@@ -15,14 +15,6 @@ namespace Parser
         public int house;
         public int floor;
 
-        public AddressData(string city, string street, int house, int floor)
-        {
-            this.city = city;
-            this.street = street;
-            this.house = house;
-            this.floor = floor;
-        }
-
         public AddressData()
         {
             this.city = null;

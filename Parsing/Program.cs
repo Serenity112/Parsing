@@ -7,9 +7,6 @@ namespace Parser
 {
     class Program
     {
-        //const string path = @"C:\Users\skura\source\repos\Parser\Parser\address.xml";
-
-        static string[] supportedFormats = { "xml", "csv" };
         static void Main(string[] args)
         {
             newRequest();
@@ -100,7 +97,7 @@ namespace Parser
                         }
 
 
-
+                        newRequest();
                         break;
                     default:
                         newRequest();
@@ -123,6 +120,12 @@ namespace Parser
                 Console.WriteLine(e.Message);
                 newRequest();
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                newRequest();
+            }
         }
+
     }
 }
